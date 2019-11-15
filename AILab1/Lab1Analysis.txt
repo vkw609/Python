@@ -1,0 +1,33 @@
+Lab 1 Analysis
+
+1. (5 points) Which search algorithm is optimal for the White Walker search implemented in
+question I? Identify which algorithm you implemented. Explain your choice of this search
+algorithm.
+
+Depth-First search was used due to the amount of cities that are farther from the city the
+White Walkers start in. It will reach the dead ends before backtracking as White Walkers 
+would if they wanted to cover each and every city.
+
+2. (5 points) What is the time complexity for the White Walker search implemented in
+question I? Show your work and express the answer in Big O notation.
+
+Time complexity for Depth-First Search is O(b^m) where b is maximum
+degree for the city and m is the maximum depth they can reach.
+
+3. (5 points) Which searching algorithm is optimal for the Jon Snow search implemented in
+question I? Identify which algorithm you implemented. Explain your choice of this search
+algorithm.
+
+In this case, I used Breadth-First search which was similar to White Walkers. However, Jon Snow has
+a goal to intercept the white walkers who are exploring every city so he has to find what
+city they are in at the moment.
+
+4. (5 points) What is the time complexity for the Jon Snow search implemented in question
+I? Show your work and express the answer in Big O notation.
+
+The time complexity is the same as Depth-First Search which is O(b^m).
+
+
+III. Bonus Question
+If the search algorithms for Jon Snow and the White Walkers were run simultaneously,
+in which city would they meet? Justify your response
